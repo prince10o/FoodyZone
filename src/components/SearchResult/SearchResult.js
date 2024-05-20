@@ -11,7 +11,7 @@ export const SearchResult = ({ data }) => {
           {data?.map(({ name, image, text, price }) => (
             <FoodCard key={name}>
               <div className="food-image">
-                <img src={BASE_URL + image} alt = "image"></img>
+                <img src={BASE_URL + image} ></img>
               </div>
               <div className="food-info">
                 <div className="info">
