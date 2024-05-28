@@ -10,15 +10,15 @@ export const SearchResult = ({ data }) => {
         <FoodCarts>
           {data?.map(({ name, image, text, price }) => (
             <FoodCard key={name}>
-              <div className="food-image">
-                <img src={BASE_URL + image}  alt="Description of the image" ></img>
+              <div className="food_image">
+                <img src={BASE_URL + image} alt="" />
               </div>
-              <div className="food-info">
+              <div className="food_info">
                 <div className="info">
                   <h3>{name}</h3>
                   <p>{text}</p>
                 </div>
-                <Button>$.{price.toFixed(2)}</Button>
+                <Button>${price.toFixed(2)}</Button>
               </div>
             </FoodCard>
           ))}
